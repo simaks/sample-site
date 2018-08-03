@@ -1,0 +1,27 @@
+.link-list {
+    @include resetList;
+
+    margin-top: 14px;
+
+    &__item {
+        display: block;
+
+        & + & {
+            &:before {
+                content: '';
+                display: block;
+                margin: 5px 0;
+                border-bottom: 1px solid $color-gray-lighter-2;
+            }
+        }
+    }
+
+    &__link {
+        text-decoration: none;
+        display: block;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

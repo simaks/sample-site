@@ -1,0 +1,14 @@
+@mixin resetList {
+    display: block;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}

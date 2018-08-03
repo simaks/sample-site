@@ -1,0 +1,26 @@
+.form-field {
+    margin-bottom: $grid-gutter-width;
+
+    &__label {
+        color: $color-gray-darkest;
+        font-family: $font-sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        margin-bottom: 4px;
+        display: block;
+    }
+
+    &__input {
+        border: 1px solid $color-gray;
+        background-color: $color-white;
+        font-family: $font-sans-serif;
+        font-size: 14px;
+        font-weight: 400;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 100%;
+        min-width: 100%;
+        padding: 6px 10px;
+    }
+}

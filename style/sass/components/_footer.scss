@@ -1,0 +1,46 @@
+.page-footer {
+    padding: 15px 0;
+    background: $color-gray-dark;
+    color: $color-gray-lighter;
+
+    &__bottom {
+        position: relative;
+    }
+
+    &__text {
+        margin: 0;
+        margin-right: 140px;
+        font-size: 12px;
+    }
+
+    &__logo {
+        color: $color-white;
+        font-family: $font-sans-serif;
+        font-size: 31px;
+        font-weight: 700;
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        line-height: 1em;
+    }
+}
+
+.footer-menu {
+    margin-bottom: 20px;
+
+    &__item {
+        color: $color-white;
+        text-decoration: none;
+        font-size: 12px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        & + &:before {
+            content: '|';
+            display: inline-block;
+            padding: 0 5px;
+        }
+    }
+}

@@ -1,0 +1,20 @@
+.contact-us {
+    &__title {
+        font-size: 24px;
+        line-height: 27px;
+        padding-bottom: 10px;
+        border-bottom: 3px solid $color-black;
+        margin-bottom: 13px;
+    }
+
+    &__description {
+        font-size: 14px;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+
+    &__form {
+        border: 1px solid $color-gray;
+        padding: 17px 19px;
+    }
+}

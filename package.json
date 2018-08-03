@@ -1,0 +1,22 @@
+{
+  "name": "devbride-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "watch": {
+    "sass": "style/sass/"
+  },
+  "scripts": {
+    "sass": "sass style/sass/index.scss style/css/index.css",
+    "postinstall": "npm run sass",
+    "watch:sass": "watch 'npm run sass' style/sass"
+  },
+  "author": "Simas Skilinskas",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.10.1"
+  },
+  "devDependencies": {
+    "watch": "^1.0.2"
+  }
+}
