@@ -2,30 +2,38 @@
     margin-left: -$grid-gutter-width / 2;
     margin-right: -$grid-gutter-width / 2;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .col {
     padding-left: $grid-gutter-width / 2;
     padding-right: $grid-gutter-width / 2;
-    float: left;
     width: 100%;
     box-sizing: border-box;
-    float: 1;
 }
 
 .col-1-2 {
-    width: 50%;
-    flex: 0 0 percentage(1 / 2);
+    @include make-col(1, 2);
 }
 
 .col-1-3 {
-    width: percentage(1 / 3);
-    flex: 0 0 percentage(1 / 3);
+    @include make-col(1, 3);
 }
 
 .col-2-3 {
-    width: percentage(2 / 3);
-    flex: 0 0 percentage(2 / 3);
+    @include make-col(2, 3);
+}
+
+@media all and (min-width: $break-point-md-min) {
+    .col-1-3-md {
+        @include make-col(1, 3);
+    }
+}
+
+@media all and (min-width: $break-point-lg-min) {
+    .col-1-2-lg {
+        @include make-col(1, 2);
+    }
 }
 
 .gutter-l {

@@ -2,12 +2,6 @@
     padding: 40px 0 0;
 }
 
-.container {
-    max-width: 1010px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .content-block {
     padding: 15px $grid-gutter-width;
     box-sizing: border-box;
@@ -15,12 +9,23 @@
 }
 
 .content-main {
-    float: left;
-    width: 708px;
+    @media all and (min-width: $break-point-md-min) {
+        float: left;
+        width: $container-md - $sidebar-width - $grid-gutter-width - $container-padding * 2;
+    }
+
+    @media all and (min-width: $break-point-lg-min) {
+        width: $container-lg - $sidebar-width - $grid-gutter-width - $container-padding * 2;
+    }
+
+    @media all and (min-width: $break-point-xl-min) {
+        width: $container-xl - $sidebar-width - $grid-gutter-width - $container-padding * 2;
+    }
 }
 
 .content-sidebar {
-    width: 282px;
-    margin-left: $grid-gutter-width;
-    float: right;
+    @media all and (min-width: $break-point-md-min) {
+        width: $sidebar-width;
+        float: right;
+    }
 }

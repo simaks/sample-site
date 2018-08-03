@@ -1,0 +1,29 @@
+.top-menu {
+    padding: 5px 0;
+    text-align: center;
+
+    &__link {
+        color: $color-black;
+        text-decoration: none;
+        font-size: 14px;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+
+    @media all and (max-width: $break-point-sm-max) {
+        &__link {
+            margin: 0 5px;
+        }
+    }
+
+    @media all and (min-width: $break-point-md-min) {
+        float: right;
+        padding: 23px 0 20px;
+
+        &__link {
+            margin-left: 9px;
+        }
+    }
+}

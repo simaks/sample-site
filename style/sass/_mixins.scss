@@ -12,3 +12,8 @@
         clear: both;
     }
 }
+
+@mixin make-col($size, $columns) {
+    flex: 0 0 percentage($size / $columns);
+    max-width: percentage($size / $columns);
+}

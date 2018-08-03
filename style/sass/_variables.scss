@@ -1,16 +1,7 @@
 // fonts
-$font-serif: TimesNewRoman,
-Times New Roman,
-Times,
-Baskerville,
-Georgia,
-serif;
-$font-sans-serif: Trebuchet MS,
-Lucida Grande,
-Lucida Sans Unicode,
-Lucida Sans,
-Tahoma,
-sans-serif;
+$font-serif: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+$font-sans-serif: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+
 // colors
 $color-white: #ffffff;
 $color-gray-lightest: #fefefe;
@@ -27,5 +18,26 @@ $color-black: #000000;
 $color-primary: #d3135a;
 $color-primary-light: #ffc2dd;
 $color-anchor: #0071bc;
+
+// container
+$container-padding: 10px;
+$container-xl: 1030px;
+$container-lg: 960px;
+$container-md: 720px;
+$container-sm: 540px;
+
+// break points
+$break-point-xs-max: 575px;
+$break-point-sm-min: 576px;
+$break-point-sm-max: 767px;
+$break-point-md-min: 768px;
+$break-point-md-max: 959px;
+$break-point-lg-min: 960px;
+$break-point-lg-max: 1139px;
+$break-point-xl-min: 1140px;
+
 // spacing
 $grid-gutter-width: 20px;
+
+// sidebar
+$sidebar-width: 282px;
