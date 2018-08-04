@@ -8,6 +8,10 @@
         font-weight: 400;
         margin-bottom: 4px;
         display: block;
+
+        .has-error > & {
+            color: red;
+        }
     }
 
     &__input {
@@ -22,5 +26,9 @@
         max-width: 100%;
         min-width: 100%;
         padding: 6px 10px;
+
+        .has-error > & {
+            border-color: red;
+        }
     }
 }

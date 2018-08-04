@@ -9,7 +9,9 @@
   "scripts": {
     "sass": "sass style/sass/index.scss style/css/index.css",
     "postinstall": "npm run sass",
-    "watch:sass": "watch 'npm run sass' style/sass"
+    "serve": "http-server",
+    "watch:sass": "watch 'npm run sass' style/sass",
+    "dev": "run-p watch:sass serve"
   },
   "author": "Simas Skilinskas",
   "license": "ISC",
@@ -17,6 +19,8 @@
     "sass": "^1.10.1"
   },
   "devDependencies": {
+    "http-server": "^0.11.1",
+    "npm-run-all": "^4.1.3",
     "watch": "^1.0.2"
   }
 }

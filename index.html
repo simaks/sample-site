@@ -110,14 +110,15 @@
                 <p class="contact-us__description">Integer eget mauris et urna pulvinar consectetur hendrerit eget mauris. Praesent a interdum justo. Aenean
                     ac diam nec neque fringilla cursus. Donec iaculis tortor in nunc vehicula rutrum. Integer malesuada mollis
                     ligula at varius. </p>
-                <form action="./index.html" class="contact-us__form">
+                <form action="./index.html" class="contact-us__form" id="contact-form">
                     <div class="form-field">
                         <label class="form-field__label" for="input-fname">First name:</label>
-                        <input class="form-field__input" type="text" name="firstname" id="input-fname" placeholder="Enter your name" required>
+                        <input class="form-field__input" type="text" name="firstname" id="input-fname" placeholder="Enter your name" required autocomplete="given-name">
                     </div>
                     <div class="form-field">
                         <label class="form-field__label" for="input-lname">Last name:</label>
-                        <input class="form-field__input" type="text" name="lastname" id="input-lname" placeholder="Enter your last name">
+                        <input class="form-field__input" type="text" name="lastname" id="input-lname" placeholder="Enter your last name" required
+                            autocomplete="family-name">
                     </div>
                     <div class="form-field">
                         <label class="form-field__label" for="input-message">Message:</label>
@@ -169,6 +170,7 @@
             </div>
         </div>
     </footer>
+    <script async src="script.js"></script>
 </body>
 
 </html>
