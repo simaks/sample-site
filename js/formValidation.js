@@ -2,6 +2,7 @@ var form = document.getElementById('contact-form');
 form.addEventListener('submit', function (event) {
     if (!isFormValid(event.target)) {
         event.preventDefault();
+        return false;
     }
 });
 
@@ -14,9 +15,9 @@ form.setAttribute('novalidate', 'novalidate');
  */
 function toggleFieldValidity(field, valid) {
     if (valid) {
-        field.classList.remove('has-error');
+        field.className = field.className.replace(' has-error' || 'has-error', '');
     } else {
-        field.classList.add('has-error');
+        field.className += ' has-error';
     }
 }
 

@@ -23,7 +23,7 @@
 }
 
 body {
-  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   padding: 0;
   margin: 0;
   font-size: 14px;
@@ -38,7 +38,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: TimesNewRoman, Times New Roman, Times, Baskerville, Georgia, serif;
+  font-family: TimesNewRoman, "Times New Roman", Times, Baskerville, Georgia, serif;
   margin: 0 0 6px;
   color: #000000;
   line-height: 1.2;
@@ -145,7 +145,7 @@ a {
 .header-logo {
   color: #ffc2dd;
   margin: 0;
-  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size: 40px;
   text-align: center;
   font-weight: 700;
@@ -168,6 +168,7 @@ a {
   color: #000000;
   text-decoration: none;
   font-size: 14px;
+  display: inline-block;
 }
 .top-menu__link:hover {
   text-decoration: underline;
@@ -215,6 +216,9 @@ a {
   color: #333333;
 }
 @media all and (max-width: 767px) {
+  .header-menu {
+    padding: 0 20px;
+  }
   .header-menu__item {
     margin: 0 5px;
   }
@@ -281,7 +285,7 @@ a {
 }
 .form-field__label {
   color: #010101;
-  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size: 14px;
   font-weight: 400;
   margin-bottom: 4px;
@@ -293,7 +297,7 @@ a {
 .form-field__input {
   border: 1px solid #898989;
   background-color: #ffffff;
-  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size: 14px;
   font-weight: 400;
   display: block;
@@ -314,7 +318,7 @@ a {
 .button {
   background: #d3135a;
   color: #fefefe;
-  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
@@ -425,7 +429,7 @@ a {
 }
 .page-footer__logo {
   color: #ffffff;
-  font-family: Trebuchet MS, Lucida Grande, Lucida Sans Unicode, Lucida Sans, Tahoma, sans-serif;
+  font-family: "Trebuchet MS", "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Tahoma, sans-serif;
   font-size: 31px;
   font-weight: 700;
   margin-top: 20px;
