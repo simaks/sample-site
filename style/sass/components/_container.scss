@@ -4,20 +4,5 @@
     margin-right: auto;
     padding: 0 $container-padding;
     box-sizing: border-box;
-
-    @media all and (min-width: $break-point-sm-min) {
-        width: $container-sm;
-    }
-
-    @media all and (min-width: $break-point-md-min) {
-        width: $container-md;
-    }
-
-    @media all and (min-width: $break-point-lg-min) {
-        width: $container-lg;
-    }
-
-    @media all and (min-width: $break-point-xl-min) {
-        width: $container-xl;
-    }
+    max-width: $container-xl;
 }

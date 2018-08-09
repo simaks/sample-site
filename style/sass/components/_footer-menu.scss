@@ -1,16 +1,20 @@
 .footer-menu {
     margin-bottom: 20px;
+
     @include clearfix;
+
     &__item {
         color: $color-white;
         text-decoration: none;
         font-size: 12px;
         float: left;
         display: block;
+
         &:hover {
             text-decoration: underline;
         }
-        &+&:before {
+
+        & + &:before {
             content: '|';
             display: inline-block;
             padding: 0 5px;
