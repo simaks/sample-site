@@ -282,6 +282,7 @@ a {
   max-width: 100%;
   min-width: 100%;
   padding: 6px 10px;
+  resize: none;
 }
 .has-error > .form-field__input {
   border-color: red;

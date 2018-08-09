@@ -1,4 +1,5 @@
-.row:after {
+.row:after,
+.sidebared-content:after {
     content: '';
     display: block;
     clear: both;
@@ -6,4 +7,36 @@
 
 .col {
     float: left;
+}
+
+@media all and (min-width: 768px) {
+    .container {
+        width: 720px;
+    }
+    .sidebared-content__main {
+        float: left;
+        width: 398px;
+    }
+    .sidebared-content__aside {
+        width: 282px;
+        float: right;
+    }
+}
+
+@media all and (min-width: 960px) {
+    .container {
+        width: 940px;
+    }
+    .sidebared-content__main {
+        width: 618px;
+    }
+}
+
+@media all and (min-width: 1140px) {
+    .container {
+        width: 1030px;
+    }
+    .sidebared-content__main {
+        width: 708px;
+    }
 }
